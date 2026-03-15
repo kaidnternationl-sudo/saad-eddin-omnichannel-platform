@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-sans text-gray-800 bg-gray-50;
+    direction: rtl;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-arabic font-bold;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-50 font-bold py-3 px-6 rounded-lg transition-all duration-300;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-arabic font-bold text-secondary-800 mb-8 text-center;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto;
+  }
+}
